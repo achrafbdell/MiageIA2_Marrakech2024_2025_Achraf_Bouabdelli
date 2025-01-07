@@ -15,14 +15,12 @@ function setup() {
 
   target = createVector(0, 0);
 
-
   // Pour le texte
   // Dessin du texte en blanc
   targets = font.textToPoints('EMSI!', 116, 300, 335,
     { sampleFactor: 0.05 });
 
   creerDesVehicules(targets.length);
-
 }
 
 function creerDesVehicules(nb) {
@@ -38,7 +36,6 @@ function draw() {
   background(0);
   // pour effet psychedelique
   //background(0, 0, 0, 10);
-
 
   // Draw a dot at each point.
   for (let p of targets) {
